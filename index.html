@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammet Nergizci - PhD Student</title>
     <style>
-    
         small-text {
             font-size: 14px;
         }
@@ -15,35 +14,51 @@
             margin: 20px;
             color: #444;
             background-color: #f4f4f4;
+            display: flex; /* Use flexbox for layout */
         }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
+
+        nav {
+            background-color: #007bff;
+            padding: 20px;
+            color: #fff;
+            min-width: 200px; /* Set a minimum width for the navigation panel */
         }
+
+        header, main {
+            flex: 1; /* Let the content area take remaining space */
+            padding: 20px;
+        }
+
         h1 {
             color: #007bff;
             margin-bottom: 5px;
         }
+
         p {
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 10px;
         }
+
         section {
             margin-bottom: 30px;
         }
+
         h2 {
             color: #007bff;
             margin-bottom: 15px;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
+
         li {
             margin-bottom: 8px;
         }
+
         footer {
             text-align: center;
             margin-top: 40px;
@@ -51,6 +66,7 @@
             background-color: #007bff;
             color: #fff;
         }
+
         a {
             color: #fff;
             text-decoration: none;
@@ -59,49 +75,63 @@
 </head>
 <body>
 
-    <header>
-        <h1>Mr. Muhammet Nergizci</h1>
-        <p>Ph.D. Student at School of Earth and Environment, University of Leeds</p>
-        <p class="small-text">Supervisors: Prof. Tim J. Wright, Prof. Andrew Hooper and Prof. Ziyadin Cakir</p>
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my professional website! I am a second-year Ph.D. student at the University of Leeds, specializing in the application of Burst Overlap Interferometry to study the Tien Shan mountain belt.
-            Additionally, my research involves investigating recent earthquakes in Turkey to determine the best North-South displacement using Sentinel-1 TOPS mode data.
-        </p>
-    </section>
-
-    <section id="research">
-        <h2>Research Interests</h2>
-        <p>
-            I am dedicated to developing and applying advanced methods for measuring three-dimensional surface displacements using Interferometric Synthetic Aperture Radar (InSAR) data. 
-            These methods include Burst Overlap Interferometry (BOI), Pixel Offset Tracking (POT), and Multiple Aperture Interferometry (MAI).   
-        </p>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
+    <nav>
+        <h2>Navigation</h2>
         <ul>
-            <li>
-                Nergizci, Muhammet, Milan Lazecky, Qi Ou, Tim Wright, and Andrew Hooper. ‘Along-Track Displacement of Mw 7.8 and 7.6 Kahramanmaraş Earthquakes from Sentinel-1 Offset Tracking and Burst Overlap Interferometry’. Procedia Computer Science, 2023.
-            </li>
-            <!-- Add more publications as needed <li>[Your Second Publication]</li> -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research Interests</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#future-plans">Future Plans</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section id="future-plans">
-        <h2>Future Plans</h2>
-        <p>
-            In the future, I plan to broaden my skills in InSAR and coding to facilitate large-scale data processing. I want to develop algorithms and software to respond quickly to natural hazards.
-            I am excited about the opportunity to contribute to Earth and Environmental Sciences.
-        </p>
-    </section>
+    <main>
 
-    <footer>
-        <p>Contact me at: <a href="mailto:eemne@leeds.ac.uk">eemne@leeds.ac.uk</a> | Follow me on <a href="https://twitter.com/mnergizcii">Twitter</a></p>
-    </footer>
+        <header>
+            <h1>Mr. Muhammet Nergizci</h1>
+            <p>Ph.D. Student at School of Earth and Environment, University of Leeds</p>
+            <p class="small-text">Supervisors: Prof. Tim J. Wright, Prof. Andrew Hooper and Prof. Ziyadin Cakir</p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Welcome to my professional website! I am a second-year Ph.D. student at the University of Leeds, specializing in the application of Burst Overlap Interferometry to study the Tien Shan mountain belt.
+                Additionally, my research involves investigating recent earthquakes in Turkey to determine the best North-South displacement using Sentinel-1 TOPS mode data.
+            </p>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <p>
+                I am dedicated to developing and applying advanced methods for measuring three-dimensional surface displacements using Interferometric Synthetic Aperture Radar (InSAR) data. 
+                These methods include Burst Overlap Interferometry (BOI), Pixel Offset Tracking (POT), and Multiple Aperture Interferometry (MAI).   
+            </p>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul>
+                <li>
+                    Nergizci, Muhammet, Milan Lazecky, Qi Ou, Tim Wright, and Andrew Hooper. ‘Along-Track Displacement of Mw 7.8 and 7.6 Kahramanmaraş Earthquakes from Sentinel-1 Offset Tracking and Burst Overlap Interferometry’. Procedia Computer Science, 2023.
+                </li>
+                <!-- Add more publications as needed <li>[Your Second Publication]</li> -->
+            </ul>
+        </section>
+
+        <section id="future-plans">
+            <h2>Future Plans</h2>
+            <p>
+                In the future, I plan to broaden my skills in InSAR and coding to facilitate large-scale data processing. I want to develop algorithms and software to respond quickly to natural hazards.
+                I am excited about the opportunity to contribute to Earth and Environmental Sciences.
+            </p>
+        </section>
+
+        <footer>
+            <p>Contact me at: <a href="mailto:eemne@leeds.ac.uk">eemne@leeds.ac.uk</a> | Follow me on <a href="https://twitter.com/mnergizcii">Twitter</a></p>
+        </footer>
+
+    </main>
 
 </body>
 </html>
